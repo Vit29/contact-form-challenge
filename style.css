@@ -120,17 +120,17 @@ textarea {
 }
 
 .form-container {
-  width: 80%;
-  border-radius: 16px;
-  padding: 1rem;
-  background-color: var(--White);
+  width: 40%;
 }
 
 .form {
+  border-radius: 16px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--White);
+  padding: 1rem;
 }
 
 .name-container,
@@ -211,3 +211,16 @@ input[type="checkbox"] {
   }
 
  }
+
+ @media (min-width: 674px ) and (max-width: 1025px) {
+  .form-container {
+    width: 60%;
+  }
+ }  
+ 
+ @media (min-width: 1026px ) and (max-width: 1500px) {
+  .form-container {
+    width: 40%;
+  }
+ }  
+ 

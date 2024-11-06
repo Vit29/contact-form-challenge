@@ -215,6 +215,7 @@ input[type="checkbox"] {
  @media (min-width: 674px ) and (max-width: 1025px) {
   .form-container {
     width: 60%;
+    height: 100vh;
   }
  }  
  
@@ -223,4 +224,4 @@ input[type="checkbox"] {
     width: 40%;
   }
  }  
- 
+

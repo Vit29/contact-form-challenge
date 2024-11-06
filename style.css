@@ -23,24 +23,23 @@
 
 html {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
   background-color: var(--Green-200);
   font-family: var(--font-family-primary);
 }
 
-label  {
+label {
   font-size: var(--Font-size-labels);
   color: var(--Darkgray);
-  margin: 1rem 0 0.5rem 0 ;
+  margin: 1rem 0 0.5rem 0;
 }
 
 label span {
@@ -83,7 +82,6 @@ textarea:focus {
   outline: 1px solid var(--Green-600);
 }
 
-
 input[type="radio"] {
   appearance: none;
   width: 0.5rem;
@@ -92,12 +90,12 @@ input[type="radio"] {
   outline-offset: 3px;
   border-radius: 50%;
 }
-input[type="radio"]:checked  {
+input[type="radio"]:checked {
   background-color: var(--Green-600);
 }
 
 input[type="radio"].error {
-  outline: 1px solid var(--Red); 
+  outline: 1px solid var(--Red);
 }
 
 input[type="radio"]:checked.error {
@@ -119,13 +117,8 @@ textarea {
   flex-direction: column;
 }
 
-.form-container {
-  width: 40%;
-}
-
 .form {
   border-radius: 16px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -145,7 +138,7 @@ textarea {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  flex-basis: 250px; 
+  flex-basis: 250px;
 }
 
 .input-radio {
@@ -170,7 +163,7 @@ textarea {
 
 input[type="checkbox"] {
   accent-color: var(--Green-600);
-  }
+}
 
 .button-submit {
   height: 40px;
@@ -204,24 +197,25 @@ input[type="checkbox"] {
 @media (max-width: 674px) {
   .form-container {
     width: 90%;
-    margin: 50px 0;
   }
 
   textarea {
     height: 200px;
   }
-  
- }
+}
 
- @media (min-width: 674px ) and (max-width: 1025px) {
-  .form-container {
-    width: 60%;
-  }
- }  
- 
- @media (min-width: 1026px ) and (max-width: 1500px) {
+@media (min-width: 1024px) and (max-width: 1500px) {
   .form-container {
     width: 40%;
   }
- }  
-
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .form-container {
+    width: 40%;
+  }
+}
+@media (min-width: 1441px) {
+  .form-container {
+    width: 30%;
+  }
+}
